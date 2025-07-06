@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: black;
+  color: white;
+}
+
+header {
+  background-color: #111;
+  padding: 20px;
+  color: white;
+}
+
+h2 {
+  color: goldenrod;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+#hero {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #121212;
+  color: white;
+}
+
+#hero span {
+  color: aqua;
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* About Section */
+#about {
+  padding: 40px;
+  font-family: Arial, sans-serif;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: nowrap; /* Keeps them inline on wider screens */
+}
+
+/* Circular Image */
+.about-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0; /* Prevents image from shrinking */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Description */
+.about-text {
+  text-align: justify;
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 800px;
+}
+
+/* Responsive fallback for small screens */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    max-width: 100%;
+  }
+}
+
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills-grid span {
+  background: #121212;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.project-card {
+  background: #121212;
+  color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 5px solid #61dafb;
+}
+
+h3 {
+  color: brown;
+}
+
+.project-card a {
+  color:aqua;
+}
+
+#contact a {
+  color: aqua;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #111;
+  color: white;
+}
+
+.nav-links a.active {
+  border-bottom: 2px solid aqua;
+}
